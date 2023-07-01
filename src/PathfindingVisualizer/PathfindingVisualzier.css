@@ -1,0 +1,83 @@
+.grid {
+    margin: 116px 0 0;
+}
+
+nav {
+    position: fixed;
+    display: flex;  
+    z-index: 1;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 0.2rem 3.5rem;
+    background-color: rgb(4, 4, 72);
+}
+
+.title {
+    color: white;
+}
+
+button {
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-right: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: .5rem;
+    background-color: rgb(210, 238, 241);
+    border: 2px solid rgb(92, 140, 217);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: rgb(105, 231, 105);
+    color: white;
+}
+
+button.maze:hover{
+    background-color: rgb(196, 107, 196);
+    color: white;
+}
+
+.reset {
+    background-color: red;
+    color: white;
+}
+
+button.reset:hover{
+    transition-duration: 0.2s;
+    background-color: red;
+    color: white;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 15px rgb(92, 140, 217);
+}
+
+.popup {
+    position: fixed;
+    cursor: pointer;
+    padding: 20px;
+}
+  
+.popup .popup-text {
+    padding: 2rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    visibility: visible;
+    position: fixed;
+    top:13.5%;
+    left:calc(50vw - 285px);
+    width: 500px;
+    height: 560px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(4, 4, 72);
+    background-color:  white;
+    border-radius: 5px;
+}
+
+.popup .show {
+    visibility: hidden;
+}
