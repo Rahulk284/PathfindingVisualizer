@@ -26,7 +26,7 @@ button {
     font-family: sans-serif;
     font-weight: 800;
     margin-right: 15px;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 6px;
     padding: .5rem;
     background-color: rgb(210, 238, 241);
@@ -74,12 +74,16 @@ button.reset:hover{
     margin-top: 0.2rem;
     left:calc(50vw - 272px);
     width: 500px;
-    height: 595px;
+    height: 580px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 5px;
     border-color: rgb(4, 4, 72);
     background-color:  white;
     border-radius: 10px;
+}
+
+.exit{
+    margin-top: -2.6%;
 }
 
 .popup .show {
