@@ -1,7 +1,7 @@
 .grid-containger{
     display: inline-block;
     min-width: 1500px;
-    margin: 135px 0 0;
+    margin: 115px 0 0;
 }
 
     
@@ -59,26 +59,26 @@ button.reset:hover{
 }
 
 .popup-container {
-    max-height: 80vh;
+    max-height: 70vh;
     overflow: auto;
     cursor: pointer;
 }
   
 .popup .popup-text {
-    padding: 1rem;
+    padding: 1.5rem;
     font-family: sans-serif;
     font-weight: 800;
     visibility: visible;
     position: fixed;
-    top:13.5%;
-    left:calc(50vw - 269px);
+    top:10%;
+    left:calc(50vw - 277px);
     width: 500px;
     height: 590px;
     border-style: solid;
     border-width: 3px;
     border-color: rgb(4, 4, 72);
     background-color:  white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .popup .show {
