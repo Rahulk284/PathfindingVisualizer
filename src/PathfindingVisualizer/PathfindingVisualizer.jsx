@@ -367,7 +367,7 @@ export default class PathfindingVisualizer extends Component {
                                 </p>
                                 
                                 <p style={{ fontSize: "20px"}}>Enjoy!</p>
-                                <h6>click this page to exit</h6>
+                                <p style={{ fontSize: "10px"}}>click this page to exit</p>
                             </p>
                         </div>
                     </div>
