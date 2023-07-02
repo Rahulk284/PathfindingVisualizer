@@ -1,7 +1,6 @@
 .grid-containger{
     display: inline-block;
     min-width: 1500px;
-    min-height: 1000px;
     margin: 135px 0 0;
 }
 
@@ -59,8 +58,9 @@ button.reset:hover{
     box-shadow: 0 4px 15px rgb(92, 140, 217);
 }
 
-.popup {
-    position: fixed;
+.popup-container {
+    max-height: 80vh;
+    overflow: auto;
     cursor: pointer;
 }
   
@@ -73,7 +73,7 @@ button.reset:hover{
     top:13.5%;
     left:calc(50vw - 269px);
     width: 500px;
-    height: 560px;
+    height: 590px;
     border-style: solid;
     border-width: 3px;
     border-color: rgb(4, 4, 72);

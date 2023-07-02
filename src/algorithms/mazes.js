@@ -25,25 +25,25 @@ export function verticalMaze(grid) {
 export function horizontalMaze(grid) {
     const newGrid = grid.slice();
 
-  for (let i = 0; i < newGrid.length; i++) {
-    newGrid[i][0].isWall = true;
-    newGrid[i][newGrid[0].length - 1].isWall = true;
-  }
-
-  for (let i = 0; i < newGrid[0].length; i++) {
-    newGrid[0][i].isWall = true;
-    newGrid[newGrid.length - 1][i].isWall = true;
-  }
-
-  for (let i = 2; i < newGrid.length - 1; i += 2) {
-    for (let j = 1; j < newGrid[0].length - 1; j++) {
-      if (randomInt(0, 3) !== 2 && !newGrid[i][j].isStart && !newGrid[i][j].isEnd) {
-        newGrid[i][j].isWall = true;
-      }
+    for (let i = 0; i < newGrid.length; i++) {
+        newGrid[i][0].isWall = true;
+        newGrid[i][newGrid[0].length - 1].isWall = true;
     }
-  }
 
-  return newGrid;
+    for (let i = 0; i < newGrid[0].length; i++) {
+        newGrid[0][i].isWall = true;
+        newGrid[newGrid.length - 1][i].isWall = true;
+    }
+
+    for (let i = 2; i < newGrid.length - 1; i += 2) {
+        for (let j = 1; j < newGrid[0].length - 1; j++) {
+            if (randomInt(0, 3) !== 2 && !newGrid[i][j].isStart && !newGrid[i][j].isEnd) {
+            newGrid[i][j].isWall = true;
+            }
+        }
+    }
+
+    return newGrid;
 }
 
 //PRIMS MAZE

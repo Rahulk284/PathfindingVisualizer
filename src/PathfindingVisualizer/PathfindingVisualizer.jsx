@@ -445,21 +445,21 @@ const getNewGridWithWallToggled = (grid, row, col) => {
 
 
 const getNewGridWithStartNodeMoved = (grid, oldRow, oldCol, newRow, newCol) => {
-  const newGrid = grid.slice();
-  const oldStartNode = newGrid[oldRow][oldCol];
-  const newStartNode = {
-    ...oldStartNode,
-    isStart: false,
-  };
-  const newStartNodeRow = newGrid[newRow];
-  const newStartNodeCol = newStartNodeRow[newCol];
-  const newStartNodeUpdated = {
-    ...newStartNodeCol,
-    isStart: true,
-  };
-  newGrid[oldRow][oldCol] = newStartNode;
-  newGrid[newRow][newCol] = newStartNodeUpdated;
-  return newGrid;
+    const newGrid = grid.slice();
+    const oldStartNode = newGrid[oldRow][oldCol];
+    const newStartNode = {
+        ...oldStartNode,
+        isStart: false,
+    };
+    const newStartNodeRow = newGrid[newRow];
+    const newStartNodeCol = newStartNodeRow[newCol];
+    const newStartNodeUpdated = {
+        ...newStartNodeCol,
+        isStart: true,
+    };
+    newGrid[oldRow][oldCol] = newStartNode;
+    newGrid[newRow][newCol] = newStartNodeUpdated;
+    return newGrid;
 };
 
 const getNewGridWithEndNodeMoved = (grid, oldRow, oldCol, newRow, newCol) => {
