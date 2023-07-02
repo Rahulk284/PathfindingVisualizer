@@ -92,15 +92,24 @@ export function primsMaze(grid, startingNode, endingNode, max = 100) {
     }
     
     for (let i = 0; i < newGrid.length; i++) {
-        newGrid[i][0].isWall = true;
-        newGrid[i][newGrid[0].length - 1].isWall = true;
+        if(!startingNode && !endingNode){
+            newGrid[i][0].isWall = true;
+            newGrid[i][newGrid[0].length - 1].isWall = true;
+        }
     }
     
     for (let i = 0; i < newGrid[0].length; i++) {
-        newGrid[0][i].isWall = true;
-        newGrid[newGrid.length - 1][i].isWall = true;
+        if(startingNode && endingNode){
+            newGrid[0][i].isWall = true;
+            newGrid[newGrid.length - 1][i].isWall = true;
+        }
     }
 
+    if(startingNode.isWall || endingNode.isWall){
+        startingNode.isWall = false;
+        endingNode.isWall = false;
+    }
+    endingNode.isWall = false;
     const nodePath = pathCheck(newGrid, startingNode, endingNode);
     const isPath = nodePath.includes(endingNode);
     if(!isPath) {
