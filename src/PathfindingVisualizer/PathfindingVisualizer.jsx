@@ -7,10 +7,10 @@ import { horizontalMaze, verticalMaze, primsMaze } from "../algorithms/mazes";
 import NewWalls from './images/NewWalls.gif'
 
 
-const START_NODE_ROW = 12;
+const START_NODE_ROW = 11;
 const START_NODE_COL = 16;
-const END_NODE_ROW = 12;
-const END_NODE_COL = 40;
+const END_NODE_ROW = 11;
+const END_NODE_COL = 38;
 
 
 
@@ -372,32 +372,34 @@ export default class PathfindingVisualizer extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="grid">
-                    {grid.map((row, rowIdx) => {
-                        return (
-                            <div key={rowIdx}>
-                                {row.map((node, nodeIdx) => {
-                                    const {row, col, isStart, isEnd, isVisited, isWall} = node; 
-                                    return (
-                                        <Node 
-                                        key={nodeIdx}
-                                        row={row}
-                                        col={col}
-                                        isWall={isWall}
-                                        isStart={isStart}
-                                        isEnd = {isEnd} 
-                                        isVisited = {isVisited}
-                                        mouseIsPressed={mouseIsPressed}
-                                        onMouseDown={(row, col) => this.handleMouseDown(row, col)}
-                                        onMouseEnter={(row, col) =>
-                                            this.handleMouseEnter(row, col)
-                                        }
-                                        onMouseUp={() => this.handleMouseUp()}></Node>
-                                    );
-                                })}
-                            </div>
-                        );
-                    })}
+                <div className="grid-containger">
+                    <div className="grid">
+                        {grid.map((row, rowIdx) => {
+                            return (
+                                <div key={rowIdx}>
+                                    {row.map((node, nodeIdx) => {
+                                        const {row, col, isStart, isEnd, isVisited, isWall} = node; 
+                                        return (
+                                            <Node 
+                                            key={nodeIdx}
+                                            row={row}
+                                            col={col}
+                                            isWall={isWall}
+                                            isStart={isStart}
+                                            isEnd = {isEnd} 
+                                            isVisited = {isVisited}
+                                            mouseIsPressed={mouseIsPressed}
+                                            onMouseDown={(row, col) => this.handleMouseDown(row, col)}
+                                            onMouseEnter={(row, col) =>
+                                                this.handleMouseEnter(row, col)
+                                            }
+                                            onMouseUp={() => this.handleMouseUp()}></Node>
+                                        );
+                                    })}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </>
         );
@@ -406,9 +408,9 @@ export default class PathfindingVisualizer extends Component {
 
 const getStartingGrid = () => {
     const grid = [];
-    for (let row = 0; row < 25; row++) {
+    for (let row = 0; row < 23; row++) {
         const currentRow = [];
-        for (let col = 0; col < 57; col++) {
+        for (let col = 0; col < 55; col++) {
             currentRow.push(createNode(col, row));
         }
         grid.push(currentRow);

@@ -1,7 +1,11 @@
-.grid {
-    margin: 116px 0 0;
+.grid-containger{
+    display: inline-block;
+    min-width: 1500px;
+    min-height: 1000px;
+    margin: 135px 0 0;
 }
 
+    
 nav {
     position: fixed;
     display: flex;  
@@ -58,17 +62,16 @@ button.reset:hover{
 .popup {
     position: fixed;
     cursor: pointer;
-    padding: 20px;
 }
   
 .popup .popup-text {
-    padding: 2rem;
+    padding: 1rem;
     font-family: sans-serif;
     font-weight: 800;
     visibility: visible;
     position: fixed;
     top:13.5%;
-    left:calc(50vw - 285px);
+    left:calc(50vw - 269px);
     width: 500px;
     height: 560px;
     border-style: solid;
