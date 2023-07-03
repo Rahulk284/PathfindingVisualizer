@@ -1,7 +1,6 @@
 .grid-containger{
     display: inline-block;
-    min-width: 1500px;
-    margin: 115px 0 0;
+    margin: 105px 0 0;
 }
 
     
@@ -74,12 +73,17 @@ button.reset:hover{
     margin-top: 0.2rem;
     left:calc(50vw - 274px);
     width: 500px;
-    height: 570px;
+    height: 560px;
     border-style: solid;
     border-width: 5px;
     border-color: rgb(4, 4, 72);
     background-color:  white;
     border-radius: 10px;
+}
+
+.body {
+    font-size: 14px;
+    text-align: left;
 }
 
 
@@ -89,12 +93,126 @@ button.reset:hover{
 }
 
 
-@media (max-width: 1252px) {
+@media screen and (min-width: 125200000px) {
+    button {
+        font-size: 14px;
+        padding: .5rem;
+    }
+    .title {
+          font-size: 20px;
+    }
+
+    .popup-container {
+        max-height: 70vh;
+        overflow: auto;
+        cursor: pointer;
+    }
+      
+    .popup .popup-text {
+        padding: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 800;
+        visibility: visible;
+        position: fixed;
+        top: 12%;
+        margin-top: 0.2rem;
+        left:calc(50vw - 274px);
+        width: 500px;
+        height: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(4, 4, 72);
+        background-color:  white;
+        border-radius: 10px;
+    }
+    
+    .body {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1252px) {
     button {
       font-size: 12px;
       padding: .4rem;
     }
     .title {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .popup-container {
+        max-height: 70vh;
+        overflow: auto;
+        cursor: pointer;
+    }
+      
+    .popup .popup-text {
+        font-size: 14px;
+        padding: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 800;
+        visibility: visible;
+        position: fixed;
+        top: 12%;
+        margin-top: 0.2rem;
+        left:calc(50vw - 225px);
+        width: 400px;
+        height: 450px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(4, 4, 72);
+        background-color:  white;
+        border-radius: 10px;
+    }
+    
+    .body {
+        font-size: 10px;
+        text-align: left;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    button {
+      font-size: 10px;
+      padding: .4rem;
+    }
+    .title {
+        font-size: 16px;
+    }
+
+    .grid-containger{
+        margin: 80px 0 0;
+    }
+
+    .popup-container {
+        max-height: 70vh;
+        overflow: auto;
+        cursor: pointer;
+    }
+      
+    .popup .popup-text {
+        padding: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 800;
+        visibility: visible;
+        position: fixed;
+        top: 12%;
+        margin-top: 0.2rem;
+        left:calc(50vw - 195px);
+        width: 340px;
+        height: 385px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(4, 4, 72);
+        background-color:  white;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    
+    .body {
+        font-size: 9px;
+        text-align: left;
+    }
+}
+

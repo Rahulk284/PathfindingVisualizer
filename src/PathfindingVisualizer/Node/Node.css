@@ -1,10 +1,49 @@
 .node {
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 25px;
+    height: 25px;
     outline: 0.8px solid rgb(4, 4, 72);
     display: inline-block;
     margin-top: -2.5px;
-  }  
+}  
+
+
+
+
+@media screen and (min-width: 100000px) {
+    .node {
+        width: 25px; /* Adjust the width to the desired size for smaller screens */
+        height: 25px; /* Adjust the height to the desired size for smaller screens */
+        margin-top: -1000px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .node {
+        width: 23px; /* Adjust the width to the desired size for smaller screens */
+        height: 23px; /* Adjust the height to the desired size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1266px) {
+    .node {
+        width: 21px; /* Adjust the width to the desired size for smaller screens */
+        height: 21px; /* Adjust the height to the desired size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .node {
+        width: 19px; /* Adjust the width to the desired size for smaller screens */
+        height: 19px; /* Adjust the height to the desired size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .node {
+        width: 18px; /* Adjust the width to the desired size for smaller screens */
+        height: 18px; /* Adjust the height to the desired size for smaller screens */
+    }
+}
 
 .node-finish {
     background-color: red;

@@ -348,25 +348,25 @@ export default class PathfindingVisualizer extends Component {
                         <div class="popup-text" id="myPopup">
                             <p >
                                 <h1>Welcome to my Pathfinding Visualizer!</h1>
-                                <p style={{ fontSize: "14px", textAlign: "left" }}>
+                                <p className="body">
                                     This project visualizes two pathfinding algorithms: Dijkstra & A*. Click on either algorithm button to start the visualization and find the shortest path to the end node (red)!
                                 </p>
 
-                                <p style={{ fontSize: "14px", textAlign: "left" }}>
+                                <p className="body">
                                     You can click and drag the start node (green) or the end node (red) to wherever you want on the grid.
                                 </p>
 
-                                <p style={{ fontSize: "14px", textAlign: "left" }}>
+                                <p className="body">
                                     You can make more challenging paths by adding walls to the grid by clicking and dragging!
                                 </p>
                                 <img src={NewWalls} alt="NEW" width="115" height="115" style={{ textAlign: "center" }}></img>
-                                <p style={{ fontSize: "14px", textAlign: "left" }}>
+                                <p className="body">
                                     This project also has three maze generators. The first maze button uses Prim's algorithm to generate an intricate and challenging maze. The last
                                     two mazes are simple mazes that do not use any complex algorithms (Vertical Maze & Horizontal Maze). Feel free to add extra walls to the mazes and make them
                                     even more challenging!
                                 </p>
                                 
-                                <p className="click" style={{ fontSize: "15px"}}>Click this page to start!</p>
+                                <p className="click" style={{ fontSize: "12px"}}>Click this page to start!</p>
                             </p>
                         </div>
                     </div>
