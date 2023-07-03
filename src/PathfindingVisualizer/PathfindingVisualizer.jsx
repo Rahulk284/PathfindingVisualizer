@@ -366,7 +366,7 @@ export default class PathfindingVisualizer extends Component {
                                     even more challenging!
                                 </p>
                                 
-                                <p className="click">Click this page to start!</p>
+                                <p className="body click">Click this page to start!</p>
                             </p>
                         </div>
                     </div>
