@@ -1,9 +1,9 @@
 .node {
     outline: 0.8px solid rgb(4, 4, 72);
     display: inline-block;
-    margin-top: -0.198vw;
-    width: 1.7vw;
-    height: 1.7vw;
+    margin-top: -2.5px;
+    width: 1.6vw;
+    height: 1.6vw;
 }  
 
 .node-finish {
