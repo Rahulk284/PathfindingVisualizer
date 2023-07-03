@@ -87,3 +87,14 @@ button.reset:hover{
 .popup .show {
     visibility: hidden;
 }
+
+
+@media (max-width: 1252px) {
+    button {
+      font-size: 12px;
+      padding: .4rem;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
