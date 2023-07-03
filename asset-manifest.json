@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PathfindingVisualizer/static/css/main.3d9a9e85.css",
+    "main.css": "/PathfindingVisualizer/static/css/main.ffea05ed.css",
     "main.js": "/PathfindingVisualizer/static/js/main.74de5d5a.js",
     "static/js/787.b219d7e7.chunk.js": "/PathfindingVisualizer/static/js/787.b219d7e7.chunk.js",
     "static/media/NewWalls.gif": "/PathfindingVisualizer/static/media/NewWalls.12eae1641035e5b0e119.gif",
     "index.html": "/PathfindingVisualizer/index.html",
-    "main.3d9a9e85.css.map": "/PathfindingVisualizer/static/css/main.3d9a9e85.css.map",
+    "main.ffea05ed.css.map": "/PathfindingVisualizer/static/css/main.ffea05ed.css.map",
     "main.74de5d5a.js.map": "/PathfindingVisualizer/static/js/main.74de5d5a.js.map",
     "787.b219d7e7.chunk.js.map": "/PathfindingVisualizer/static/js/787.b219d7e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d9a9e85.css",
+    "static/css/main.ffea05ed.css",
     "static/js/main.74de5d5a.js"
   ]
 }
