@@ -357,7 +357,7 @@ export default class PathfindingVisualizer extends Component {
                                 </p>
 
                                 <p className="body">
-                                    You can make more challenging paths by adding walls to the grid by clicking and dragging!
+                                    You can make more complex paths by adding walls to the grid by clicking and dragging!
                                 </p>
                                 <img className="image" src={NewWalls} alt="NEW" style={{ textAlign: "center" }}></img>
                                 <p className="body">
