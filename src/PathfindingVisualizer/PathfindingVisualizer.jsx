@@ -359,7 +359,7 @@ export default class PathfindingVisualizer extends Component {
                                 <p className="body">
                                     You can make more challenging paths by adding walls to the grid by clicking and dragging!
                                 </p>
-                                <img src={NewWalls} alt="NEW" width="115" height="115" style={{ textAlign: "center" }}></img>
+                                <img className="image" src={NewWalls} alt="NEW" style={{ textAlign: "center" }}></img>
                                 <p className="body">
                                     This project also has three maze generators. The first maze button uses Prim's algorithm to generate an intricate and challenging maze. The last
                                     two mazes are simple mazes that do not use any complex algorithms (Vertical Maze & Horizontal Maze). Feel free to add extra walls to the mazes and make them
